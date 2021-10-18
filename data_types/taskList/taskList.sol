@@ -59,6 +59,7 @@ contract taskList {
 
     function deleteTask (int8 key) public returns (mapping (int8 => task)) { 
         delete allTasks[key];
+        counter--;
         return allTasks;
     }
     
